@@ -1,4 +1,4 @@
-# ITPM Playwright Test Suite ✅
+# ITPM Playwright Test Suite
 
 **Short description**
 
@@ -6,7 +6,7 @@ This repository contains a Playwright test suite that validates the Singlish-to-
 
 ---
 
-## 🔧 Features
+## Features
 
 - Tests written with `@playwright/test` (v1.58+)
 - Tests grouped into: `positive`, `negative`, `ui`, and `example` specs
@@ -16,7 +16,7 @@ This repository contains a Playwright test suite that validates the Singlish-to-
 
 ---
 
-## 🧰 Prerequisites
+## Prerequisites
 
 - Node.js LTS (recommended) installed
 - Git (optional)
@@ -24,7 +24,7 @@ This repository contains a Playwright test suite that validates the Singlish-to-
 
 ---
 
-## ⚙️ Installation
+## Installation
 
 1. Clone the repository:
 
@@ -45,11 +45,9 @@ This repository contains a Playwright test suite that validates the Singlish-to-
    npx playwright install --with-deps
    ```
 
-> Tip: On Windows you can omit `--with-deps` if you already have required system dependencies.
-
 ---
 
-## ▶️ Running tests locally
+## Running tests locally
 
 - Run the full test suite:
 
@@ -83,7 +81,7 @@ This repository contains a Playwright test suite that validates the Singlish-to-
 
 ---
 
-## 🧪 Test structure & conventions
+## Test structure & conventions
 
 - Test directory: `tests/`
 - `positive.spec.js` and `negative.spec.js` contain arrays of scenario objects with `id`, `name`, `input`, and `expected` fields.
@@ -92,14 +90,14 @@ This repository contains a Playwright test suite that validates the Singlish-to-
 
 ---
 
-## 📁 Artifacts
+## Artifacts
 
 - Screenshots: `screenshots/` (saved by tests)
 - HTML report: `playwright-report/` (generated automatically by the `html` reporter)
 
 ---
 
-## ✅ Continuous Integration
+## Continuous Integration
 
 This repo includes a GitHub Actions workflow: `.github/workflows/playwright.yml`. It:
 
@@ -110,7 +108,7 @@ This repo includes a GitHub Actions workflow: `.github/workflows/playwright.yml`
 
 ---
 
-## ➕ Contributing
+## Contributing
 
 - Add new scenarios to `positive.spec.js` or `negative.spec.js` following the same object structure.
 - Keep each test deterministic and avoid external dependencies where possible.
@@ -118,7 +116,7 @@ This repo includes a GitHub Actions workflow: `.github/workflows/playwright.yml`
 
 ---
 
-## 🛠 Troubleshooting
+## Troubleshooting
 
 - If tests time out, verify network access to `https://www.swifttranslator.com/` and increase test timeouts if needed.
 - If Playwright browsers are missing, re-run: `npx playwright install`.
@@ -126,7 +124,7 @@ This repo includes a GitHub Actions workflow: `.github/workflows/playwright.yml`
 
 ---
 
-## 📚 Useful commands (suggested package.json scripts)
+## Useful commands (suggested package.json scripts)
 
 You may add the following to `package.json` "scripts" for convenience:
 
